@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">App Payments</string>
+    <string name="spinner_prompt">Monthly</string>
+    <string name="CF">Choose Frequency</string>
+    <string name="FPD">First Payment Date</string>
+    <string name="CD">Choose Date</string>
+    <string name="EA">Enter Amount</string>
+    <string name="EOD">Or Enter End Date</string>
+    <string name="S">Submit</string>
+    <string-array name="monthly">
+        <item>Monthly</item>
+        <item>Quaterly</item>
+        <item>Half Yearly</item>
+        <item>Annually</item>
+        <item>Weekly</item>
+    </string-array>
+</resources>

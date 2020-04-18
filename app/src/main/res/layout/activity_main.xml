@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f7f8fd"
+    >
+    
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".5"
+        android:layout_marginTop="20sp"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:background="#f2f3f5"
+            android:textAlignment="center"
+            android:text="@string/CF"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_below="@id/tv1"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:background="#f2f3f5"
+            android:layout_marginTop="15sp"
+            android:textAlignment="center"
+            android:text="@string/FPD"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".5"
+        android:layout_marginTop="20sp"
+        >
+
+        <Spinner
+            android:id="@+id/spinn"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:prompt="@string/spinner_prompt"
+            android:dropDownSelector="@android:drawable/arrow_down_float"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="15sp"
+            android:layout_below="@id/spinn"
+            android:background="#fff"
+
+            >
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CD"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_margin="10sp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/col"
+                android:layout_toEndOf="@id/tv3"
+                android:layout_margin="5sp"
+                android:contentDescription="Calendar" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="10sp">
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EA"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:paddingLeft="10sp"
+            />
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_below="@id/tv4"
+            android:background="#fff"
+            android:hint="Amount"
+            android:textSize="20sp"
+            android:padding="15sp"
+            android:layout_margin="10sp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:layout_marginTop="20sp"
+        >
+
+            <EditText
+                android:layout_weight=".5"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Enter Period"
+                android:gravity="center"
+                android:layout_margin="12sp"
+                android:background="#fff"
+
+                />
+
+        <Spinner
+            android:id="@+id/spinn2"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight=".5"
+            android:layout_marginTop="12sp"
+            android:prompt="@string/spinner_prompt"
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll4"
+        android:text="@string/EOD"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/S"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        />
+
+    
+</RelativeLayout>
